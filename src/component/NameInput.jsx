@@ -4,6 +4,14 @@ import cloveImage from "../assets/clove.webp";
 function NameInput({ onConfirm }) {
   const [name, setName] = useState("");
 
+  const handleSubmit = () => {
+    if (!name) {
+      alert("Please enter your name! ;("); // แจ้งเตือนเมื่อไม่มีการกรอกชื่อ
+    } else {
+      onConfirm(name); // ถ้ามีการกรอกชื่อให้ส่งค่า
+    }
+  };
+
   return (
     <div className="bg-white shadow-xl h-70 rounded-xl justify-center flex flex-col items-center gap-4 p-6">
       <label className="text-lg font-semibold text-pink-400">
@@ -21,7 +29,7 @@ function NameInput({ onConfirm }) {
         class=" w-76 h-64 rounded-xl object-left"
       />
       <button
-        onClick={() => onConfirm(name)}
+        onClick={handleSubmit}
         className="py-1.5 px-4 text-xl rounded-full bg-gradient-to-r
          from-pink-500 to-pink-400 text-white cursor-pointer
           font-semibold text-center shadow-xs transition-all
