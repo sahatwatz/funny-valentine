@@ -30,7 +30,7 @@ function NameInput({ onConfirm }) {
         Let's go
       </button>
       <footer class="text-gray-500 text-xs text-center p-4 mt-4">
-        <p>&copy; 2025 built by sahatwatz.</p>
+        <p>&copy; 2025 built by sahatwatz. v.0.7.0 </p>
       </footer>
     </div>
   );
