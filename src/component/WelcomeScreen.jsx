@@ -8,7 +8,7 @@ function WelcomeScreen({ name }) {
       <h1 className="text-2xl font-bold">I'm glad to see you here</h1>
       <p className="text-lg">I have one question for you.</p>
       <img
-        src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExZWo5MzdpcjdyemJtcGI1emdhcXBqcjFtanB4N3docnZsNWR2OGdlYyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/qE86wtoTSWzaSDVYix/giphy.gif"
+        src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExMGlwcWRzZzRjYW0wZW4zdDQ2dWRhNHlldTRxOTk1NzdkbGZ0NWhpaCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/FWAcpJsFT9mvrv0e7a/giphy.gif"
         alt="Loading GIF"
         class="w-64 h-64 rounded"
       />
@@ -18,6 +18,9 @@ function WelcomeScreen({ name }) {
       >
         Yep, I'm ready
       </button>
+      <footer class="text-gray-500 text-xs text-center p-4 mt-4">
+        <p>&copy; 2025 built by sahatwatz.</p>
+      </footer>
     </div>
   );
 }
