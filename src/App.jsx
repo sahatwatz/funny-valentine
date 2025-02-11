@@ -4,6 +4,7 @@ import WelcomeScreen from "./component/WelcomeScreen";
 import SummaryScreen from "./component/SummaryScreen";
 import QuestionScreen from "./component/QuestionScreen";
 import MusicPlayer from "./component/MusicPlayer";
+import { Analytics } from "@vercel/analytics/react";
 
 export default function App() {
   const [step, setStep] = useState(1);
